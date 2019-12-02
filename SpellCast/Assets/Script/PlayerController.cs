@@ -18,6 +18,27 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.E))
+        {
+            rHand.transform.Rotate(new Vector3(0, 1, 0));
+        }
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            rHand.transform.Rotate(new Vector3(0, -1, 0));
+        }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            rHand.transform.Rotate(new Vector3(1, 0, 0));
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            rHand.transform.Rotate(new Vector3(-1, 0, 0));
+        }
+
+
         Vector3 newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Mathf.Abs(Camera.main.transform.position.z - transform.position.z)));
         newPos.z = transform.position.z;
 
