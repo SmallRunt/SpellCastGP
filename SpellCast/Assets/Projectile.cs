@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     Rigidbody rb;
+    public float shootSpeed = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,14 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * 10);
+        gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * shootSpeed);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 }

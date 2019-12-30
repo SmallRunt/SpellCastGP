@@ -77,7 +77,10 @@ public class PlayerController : MonoBehaviour
                 handVFX.gameObject.SetActive(true);
             }
 
-            
+            if(other.gameObject.tag == "EnemyProjectile")
+            {
+                //TakeDamage
+            }
         }
     }
 }

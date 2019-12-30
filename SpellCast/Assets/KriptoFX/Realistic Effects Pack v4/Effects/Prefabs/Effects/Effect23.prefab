@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 19981076}
   m_Layer: 0
   m_Name: Core
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4594,7 +4594,7 @@ GameObject:
   - component: {fileID: 11424482}
   m_Layer: 0
   m_Name: Wind
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4760,7 +4760,7 @@ GameObject:
   - component: {fileID: 19919650}
   m_Layer: 0
   m_Name: FireTrail
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9297,7 +9297,7 @@ GameObject:
   - component: {fileID: 2443419795330402652}
   m_Layer: 0
   m_Name: Effect23
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9384,7 +9384,7 @@ GameObject:
   - component: {fileID: 8206550}
   m_Layer: 0
   m_Name: Start
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9512,7 +9512,7 @@ GameObject:
   - component: {fileID: 19964050}
   m_Layer: 0
   m_Name: Particles
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13958,7 +13958,7 @@ GameObject:
   - component: {fileID: 11404330}
   m_Layer: 0
   m_Name: Flame
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14124,7 +14124,7 @@ GameObject:
   - component: {fileID: 251014348074034571}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14205,7 +14205,7 @@ GameObject:
   - component: {fileID: 19947608}
   m_Layer: 0
   m_Name: ParticlesLight
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18776,7 +18776,7 @@ GameObject:
   - component: {fileID: 442062}
   m_Layer: 0
   m_Name: Audio
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18810,7 +18810,7 @@ GameObject:
   - component: {fileID: 108695929941652266}
   m_Layer: 0
   m_Name: Point light
-  m_TagString: Projectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
