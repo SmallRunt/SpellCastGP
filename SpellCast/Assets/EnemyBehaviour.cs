@@ -58,7 +58,7 @@ public class EnemyBehaviour : MonoBehaviour
     void attackPlayer()
     {
         Instantiate(firePrefab, attackPos.transform.position, attackPos.transform.rotation);
-        Destroy(firePrefab, 4f);
+        //Destroy(firePrefab, 2f);
     }
 }
 

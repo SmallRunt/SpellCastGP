@@ -3785,6 +3785,7 @@ GameObject:
   - component: {fileID: 229392588}
   - component: {fileID: 229392587}
   - component: {fileID: 229392586}
+  - component: {fileID: 229392589}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Player
@@ -3864,6 +3865,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229392584}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &229392589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229392584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f7bf1c18950704d86692d0f19364bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: 100
+  pEnergy: 100
+  damageTaken: 50
 --- !u!4 &229516827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b2f96746c6005c64888263f64272a556,
@@ -15366,7 +15382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea559f0b9cbedfa40bee6eca4d7df13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePrefab: {fileID: 119242, guid: 4bc451a9c5656db4794e16cdecbabbac, type: 3}
+  firePrefab: {fileID: 119242, guid: bcb9653cc11fc0d4eadcb2dd22b02655, type: 3}
   targetPlayer: {fileID: 769131055}
   attackPos: {fileID: 1406028392}
   attackTimer: 0

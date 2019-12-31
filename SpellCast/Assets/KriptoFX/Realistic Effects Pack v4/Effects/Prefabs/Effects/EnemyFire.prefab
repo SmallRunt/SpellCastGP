@@ -9295,6 +9295,7 @@ GameObject:
   - component: {fileID: 114898057786261324}
   - component: {fileID: 837200985128812040}
   - component: {fileID: 2443419795330402652}
+  - component: {fileID: 5497027517221099153}
   m_Layer: 0
   m_Name: EnemyFire
   m_TagString: EnemyProjectile
@@ -9372,6 +9373,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5497027517221099153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286854b59ca0eff4ebe9c992a305fcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2443419795330402652}
+  shootSpeed: 100
 --- !u!1 &123356
 GameObject:
   m_ObjectHideFlags: 0
@@ -14124,7 +14139,7 @@ GameObject:
   - component: {fileID: 251014348074034571}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

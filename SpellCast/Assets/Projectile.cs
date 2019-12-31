@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    Rigidbody rb;
+    public Rigidbody rb;
     public float shootSpeed = 100;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            Destroy(gameObject,1f);
         }
     }
 }

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem handVFX;
     public GameObject firePrefab;
     public float spellCount;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    
+
         //if (Input.GetKey(KeyCode.E))
         //{
         //    rHand.transform.Rotate(new Vector3(0, 1, 0));
@@ -75,11 +77,6 @@ public class PlayerController : MonoBehaviour
             if (spellCount >= 1)
             {
                 handVFX.gameObject.SetActive(true);
-            }
-
-            if(other.gameObject.tag == "EnemyProjectile")
-            {
-                //TakeDamage
             }
         }
     }
