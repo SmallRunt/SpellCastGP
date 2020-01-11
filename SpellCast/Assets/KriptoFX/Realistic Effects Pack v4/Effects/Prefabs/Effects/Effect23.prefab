@@ -9354,8 +9354,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.7166957, z: 1}
+  m_Center: {x: 0, y: 0.0977909, z: 0}
 --- !u!54 &2443419795330402652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14121,7 +14121,6 @@ GameObject:
   m_Component:
   - component: {fileID: 418778}
   - component: {fileID: 114153433710859902}
-  - component: {fileID: 251014348074034571}
   m_Layer: 0
   m_Name: Collision
   m_TagString: Projectile
@@ -14172,26 +14171,14 @@ MonoBehaviour:
   MinSpeed: 7
   ColliderRadius: 1
   FreezeRotation: 0
-  UseTargetPositionAfterCollision: 0
+  UseTargetPositionAfterCollision: 1
   EffectOnCollision: {fileID: 132858, guid: dcbbdee2152660b41822b2eb0ccb8767, type: 3}
   CollisionEffectInWorldSpace: 1
   LookAtNormal: 1
-  CollisionEffectDestroyAfter: 5
-  DeactivateObjectsAfterCollision: []
+  CollisionEffectDestroyAfter: 1
+  DeactivateObjectsAfterCollision:
+  - {fileID: 0}
   HUE: -1
---- !u!65 &251014348074034571
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172562}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &191498
 GameObject:
   m_ObjectHideFlags: 0

@@ -328,6 +328,8 @@ MonoBehaviour:
   enemyHealth: 40
   deathEffect: {fileID: 1837398281301428, guid: c6bff702ea33dbd43b35ea3d6db5f838,
     type: 3}
+  agent: {fileID: 5556617139100635371}
+  eB: {fileID: 5556617139100635370}
 --- !u!195 &5556617139100635371
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -362,12 +364,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea559f0b9cbedfa40bee6eca4d7df13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePrefab: {fileID: 1279537664556678471, guid: fc8c09f295b50c742aca41d5db6ff356,
-    type: 3}
+  firePrefab: {fileID: 121802, guid: 621197e151062344988977c2f4b89adb, type: 3}
   targetPlayer: {fileID: 0}
   attackPos: {fileID: 5556617140893129233}
   attackTimer: 0
   anim: {fileID: 7451425780775647121}
+  isChase: 0
 --- !u!95 &7451425780775647121
 Animator:
   serializedVersion: 3

@@ -10,13 +10,13 @@ public class EnemyBehaviour : MonoBehaviour
     public Transform attackPos;
     public float attackTimer;
     public Animator anim;
-
+    public bool isChase = false;
     //public int enemyHealth;
     //public GameObject deathEffect;
     // Start is called before the first frame update
     void Start()
     {
-        targetPlayer = GameObject.FindGameObjectWithTag("Player");
+        //targetPlayer = GameObject.FindGameObjectWithTag("Player");
         attackTimer = 3;
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
@@ -25,17 +25,38 @@ public class EnemyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ChasePlayer();
+        if(agent.speed == 6)
+        {
+            anim.SetBool("isWalking", true);
+        }
+
+        else if(agent.speed == 0)
+        {
+            anim.SetBool("isWalking", false);
+        }
 
         float distanceFromPlayer = Vector3.Distance(targetPlayer.transform.position, transform.position);
+        if (distanceFromPlayer <= 10)
+        {
+            isChase = true;
+            
+        }
+
+        if (isChase)
+        {
+            ChasePlayer();
+        }
+
         if (distanceFromPlayer <= agent.stoppingDistance)
         {
             attackTimer -= 1 * Time.deltaTime;
         }
+
         if(attackTimer == 3)
         {
             anim.SetBool("isWalking", true);
         }
+
         if(attackTimer <= 0)
         {
             anim.SetBool("isWalking", false);
@@ -45,12 +66,6 @@ public class EnemyBehaviour : MonoBehaviour
             attackTimer = 3;
         }
 
-        //if (enemyHealth <= 0)
-        //{
-        //    anim.SetFloat("death", 0);
-        //    Instantiate(deathEffect, transform.position, transform.rotation);
-        //    Destroy(gameObject, 1f);
-        //}
     }
 
     private void ChasePlayer()
@@ -64,14 +79,6 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Projectile")
-    //    {
-    //        anim.SetBool("isDamage", true);
-    //        enemyHealth -= 50;
-    //    }
-    //}
 
     void FaceTarget(Transform target)
     {

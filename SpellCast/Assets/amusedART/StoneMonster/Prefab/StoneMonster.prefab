@@ -256,11 +256,10 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 6098175c4d4a46343be4d6857847330b, type: 3}
   m_Animations:
+  - {fileID: 7400000, guid: b6f5d330aa1b85245b9380b24ce6dd3a, type: 2}
+  - {fileID: 7400000, guid: 98482945bcdebac438a60346143fa44c, type: 2}
+  - {fileID: 7400000, guid: f46f9effc2d0f7341a597c9e9ee7a485, type: 2}
   - {fileID: 7400000, guid: 6098175c4d4a46343be4d6857847330b, type: 3}
-  - {fileID: 7400000, guid: 87aca181203408543942305a65e47c0b, type: 3}
-  - {fileID: 7400000, guid: 3cab52bd39b9a5f4fb028f9ae0ecbc91, type: 3}
-  - {fileID: 7400000, guid: 8af2259933ccf2e47b0a9493f3516fc4, type: 3}
-  - {fileID: 7400000, guid: 3e63abeab47efea44a9868d7d769abcf, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
